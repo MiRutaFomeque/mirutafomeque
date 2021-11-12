@@ -1,2 +1,2 @@
 # mirutafomeque
-Aplicacion movil de turismo
+Aplicacion movil de turismo.
