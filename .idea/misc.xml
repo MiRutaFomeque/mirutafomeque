@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
       </map>
     </option>
   </component>
+=======
+        <entry key="..\:/Users/guazo/Documents/TRABAJOS/Mision Tic 2022/Ciclo IV/Programacion Movil G-10-11-12/Project/MRFOM/mirutafomeque/app/src/main/res/layout/activity_main.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+>>>>>>> 8c5e199d4072374d1f2b97c1742b649d1af1f70c
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
