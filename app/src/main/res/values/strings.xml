@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MRFOM</string>
+    <string name="titulo">Lugares de Fómeque</string>
+    <string name="tituloregistrodatos">Registro de lugares</string>
+    <string name="nombresitio">Nombre del sitio</string>
+    <string name="ubicacionsitio">Ubicación del sitio</string>
+    <string name="temperaturasitio">Temperatura</string>
+    <string name="descripcionsitio">Descripción</string>
+    <string name="puntuacionsitio">Puntuación</string>
+    <string name="agregarsitiorec">Agregar sitio recomendado</string>
+    <string name="subsitios">Sitios recomendados</string>
+    <string name="agregarsitio">Agregar</string>
 </resources>

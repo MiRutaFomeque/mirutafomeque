@@ -23,7 +23,7 @@
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Lugares de Fómeque"
+            android:text="@string/titulo"
             android:textColor="#8BC34A"
             android:textSize="24sp" />
 
