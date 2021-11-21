@@ -29,7 +29,7 @@
             android:ems="10"
             android:hint="@string/nombresitio"
             android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/ubicacion_edit_text"
@@ -124,6 +124,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/agregarsitio" />
+
+        <TextView
+            android:id="@+id/visor_de_texto_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/textovisor"
+            android:textSize="34sp" />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -50,7 +50,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView1.1"
+                    android:id="@+id/name_text_View"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="La Cumbre"
@@ -59,7 +59,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView1.2"
+                    android:id="@+id/location_text_View"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vereda de chinia"
@@ -75,7 +75,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView1.3"
+                    android:id="@+id/temperature_text_View"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
@@ -86,7 +86,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/go_button1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:insetLeft="10dp"

@@ -10,4 +10,12 @@
     <string name="agregarsitiorec">Agregar sitio recomendado</string>
     <string name="subsitios">Sitios recomendados</string>
     <string name="agregarsitio">Agregar</string>
+    <string name="visordetexto">Visor</string>
+    <string name="sitio1">La Cumbre</string>
+    <string name="ubicacion1">Vereda de chinia</string>
+    <string name="temperatura1">18ºC - 22 ºC</string>
+    <string name="btnir1">ir</string>
+    <string name="description1">Descripcion</string>
+    <string name="puntaje1">100</string>
+    <string name="textovisor">TextView</string>
 </resources>
