@@ -5,10 +5,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
 
 class ListaSitiosTuristicosActivity : AppCompatActivity() {
 
-    private lateinit var listSitios: ArrayList<SitiosTuristicos>
+    private lateinit var listSitios: ArrayList<SitiosTuristicosItem>
     private lateinit var sitiosTuristicosAdapter: SitiosturisticosAdapter
     private lateinit var sitiosrecyclerview: RecyclerView
 
@@ -17,7 +18,8 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lista_sitios_turisticos)
 
         sitiosrecyclerview = findViewById(R.id.lista_sitios_recycler_view)
-        listSitios = crearMockListaSitios()
+        //listSitios = crearMockListaSitios()
+        listSitios = loadMockListaSitiosFromJson()
         sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios)
 
         /*sitiosrecyclerview.addItemDecoration(
@@ -35,7 +37,15 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
 
     }
 
+    private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
 
+        var listaSitiosTurString : String = applicationContext.assets.open("sitiosTuristicos.json").bufferedReader().use { it.readText() }
+        val gson = Gson()
+        val data = gson.fromJson(listaSitiosTurString, SitiosTuristicos::class.java)
+        return data
+    }
+
+/*
     private fun crearMockListaSitios() : ArrayList<SitiosTuristicos>{
         return arrayListOf(
             SitiosTuristicos(
@@ -84,6 +94,8 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
                 urlPicture = "https://jhostore.store/wp-content/uploads/2021/11/LaCasaDeFoEzama.jpg"
             )
         )
-    }
+    }*/
+
+
 
 }

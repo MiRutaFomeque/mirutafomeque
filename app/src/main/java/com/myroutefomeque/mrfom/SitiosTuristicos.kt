@@ -1,5 +1,10 @@
 package com.myroutefomeque.mrfom
 
+
+import com.google.gson.annotations.SerializedName
+
+/*
+ //Codigo anterior para cargar una lista quemada
 class SitiosTuristicos(
    val nombre: String,
    val infoGeneral: String,
@@ -9,4 +14,8 @@ class SitiosTuristicos(
    val puntuacion: Int,
    val urlPicture: String
 
-)
+)*/
+
+
+
+class SitiosTuristicos : ArrayList<SitiosTuristicosItem>()

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 class SitiosturisticosAdapter(
-    private val SitiosturisticosList: ArrayList<SitiosTuristicos>
+    private val SitiosturisticosList: ArrayList<SitiosTuristicosItem>
     ) : RecyclerView.Adapter<SitiosturisticosAdapter.ViewHolder>() {
 
 
@@ -34,7 +34,7 @@ class SitiosturisticosAdapter(
         private var temperature_text_View: TextView = itemView.findViewById(R.id.temperature_text_View)
         private var puntaje_text_View: TextView = itemView.findViewById(R.id.puntaje_text_View)
 
-        fun bind(SitiosTuristicos: SitiosTuristicos){
+        fun bind(SitiosTuristicos: SitiosTuristicosItem){
             name_text_View.text = SitiosTuristicos.nombre
             location_text_View.text = SitiosTuristicos.ubicacion
             description_text_View.text = SitiosTuristicos.infoGeneral
