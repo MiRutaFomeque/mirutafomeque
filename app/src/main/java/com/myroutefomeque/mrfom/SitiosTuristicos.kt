@@ -6,6 +6,7 @@ class SitiosTuristicos(
    val ubicacion: String,
    val temperatura: Int,
    val sitiosRecomendados: String,
-   val puntuacion: Int
+   val puntuacion: Int,
+   val urlPicture: String
 
 )

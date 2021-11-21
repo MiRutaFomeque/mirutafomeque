@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class SitiosturisticosAdapter(
     private val SitiosturisticosList: ArrayList<SitiosTuristicos>
@@ -39,6 +40,7 @@ class SitiosturisticosAdapter(
             description_text_View.text = SitiosTuristicos.infoGeneral
             temperature_text_View.text = SitiosTuristicos.temperatura.toString()
             puntaje_text_View.text = SitiosTuristicos.puntuacion.toString()
+            Picasso.get().load(SitiosTuristicos.urlPicture).into(picture_image_View);
 
         }
     }
