@@ -18,4 +18,5 @@
     <string name="description1">Descripcion</string>
     <string name="puntaje1">100</string>
     <string name="textovisor">TextView</string>
+    <string name="medida">°C</string>
 </resources>
