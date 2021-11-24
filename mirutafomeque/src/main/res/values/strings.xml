@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mi Ruta Fomeque</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="titulo">Lugares de Fómeque</string>
+    <string name="tituloregistrodatos">Registro de lugares</string>
+    <string name="nombresitio">Nombre del sitio</string>
+    <string name="ubicacionsitio">Ubicación:</string>
+    <string name="temperaturasitio">Temperatura</string>
+    <string name="descripcionsitio">Descripción</string>
+    <string name="puntuacionsitio">Puntuación</string>
+    <string name="agregarsitiorec">Agregar sitio recomendado</string>
+    <string name="subsitios">Sitios recomendados</string>
+    <string name="agregarsitio">Agregar</string>
+    <string name="visordetexto">Visor</string>
+    <string name="sitio1">La Cumbre</string>
+    <string name="ubicacion1">Vereda de chinia</string>
+    <string name="temperatura1">18ºC - 22 ºC</string>
+    <string name="btnir1">ir</string>
+    <string name="description1">Descripcion</string>
+    <string name="puntaje1">100</string>
+    <string name="textovisor">TextView</string>
+    <string name="medida">°C</string>
+    <string name="imgreferencia">Imagen de referencia</string>
+    <string name="sitiorec1">Sitios recomendados</string>
+    <string name="puntos">P</string>
+    <string name="puntossuspensivos">...</string>
+</resources>
