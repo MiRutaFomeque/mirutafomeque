@@ -22,4 +22,5 @@
     <string name="imgreferencia">Imagen de referencia</string>
     <string name="sitiorec1">Sitios recomendados</string>
     <string name="puntos">P</string>
+    <string name="puntossuspensivos">...</string>
 </resources>

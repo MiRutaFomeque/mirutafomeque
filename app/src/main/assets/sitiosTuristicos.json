@@ -1,7 +1,7 @@
 [
     {
         "nombre" : "La Cumbre",
-        "infoGeneral" : "Destinada a producción de truchas, cuenta con una capacidad para unas 45.000 truchas las cuales se venden al turista y a los negocios\ndel oriente de Cundinamarca así como en la\nciudad de Bogotá",
+        "infoGeneral" : "Destinada a producción de truchas, cuenta con una capacidad para unas 45.000 truchas las cuales se venden al turista y a los negocios del oriente de Cundinamarca así como en la ciudad de Bogotá",
         "ubicacion" : "En la vereda de Chinia",
         "temperatura" : 18,
         "sitiosRecomendados" : "El mismo lugar",
@@ -10,7 +10,7 @@
     },
     {   
         "nombre" : "La Unión",
-        "infoGeneral" : "El asentamiento inicial de Fómeque se realiza sobre lo que hoy se conoce como la Unión, sin embargo se traslado a un valle de mayor elevacion que permite apreciar los territorios de Choachi y Ubaque. La Unión tiene un clima calido y una población relativamente pequeña, pero cuenta con una cantidad de atractivos que invitan al turista a conocer la riqueza ambiental del municipio y sus\npotencialidades como proveedor de turismo de\nnaturaleza y aventura.",
+        "infoGeneral" : "El asentamiento inicial de Fómeque se realiza sobre lo que hoy se conoce como la Unión, sin embargo se traslado a un valle de mayor elevacion que permite apreciar los territorios de Choachi y Ubaque. La Unión tiene un clima calido y una población relativamente pequeña, pero cuenta con una cantidad de atractivos que invitan al turista a conocer la riqueza ambiental del municipio y sus potencialidades como proveedor de turismo de naturaleza y aventura.",
         "ubicacion" : "Al suroeste de Ucuatoque.",
         "temperatura" : 22,
         "sitiosRecomendados" : "La capilla,las playas,balneario,Restaurante Casa Betelu,",
@@ -19,7 +19,7 @@
     },
     {      
         "nombre" : "Chingaza",
-        "infoGeneral" : "Esta es considerada una de las reservas ecológicasmás importantes del mundo, albergando una\nvariedad importante de especies vegetales.Entre éstas se\nencuentran ocho especies de musgo de pantano,\nconsideradas maravillas ecológicas por la conservación\nde la humedad ambiental ya que pueden\nabsorber hasta 40 veces su peso en agua liberándola\ngradualmente a las fuentes hidricas.",
+        "infoGeneral" : "Esta es considerada una de las reservas ecológicasmás importantes del mundo, albergando una variedad importante de especies vegetales.Entre éstas se encuentran ocho especies de musgo de pantano, consideradas maravillas ecológicas por la conservación de la humedad ambiental ya que pueden absorber hasta 40 veces su peso en agua liberándola gradualmente a las fuentes hidricas.",
         "ubicacion" : "En la Cordillera Oriental, en la región andina.",
         "temperatura" : 21,
         "sitiosRecomendados" : "Laguna de Siecha,sendero Lagunas de Buitrago, sendero Cuchillas de Siecha, sendero Laguna Seca, sendero Suasie Corto y Suasie Largo y el sendero las Plantas del Camino.",
@@ -28,10 +28,10 @@
     },
     {       
         "nombre" : "Parque Jesús Maestro",
-        "infoGeneral" : "El parque Jesús Maestro fue reconstruido entre 1988 y el año 2000, donde se acondiciono como\\nse encuentra en la actualidad, con variedad de\\nplantas y árboles conservando el verde de la naturaleza,\\ncuenta con una estatua en el centro y\\nsillas de cemento donde se reúnen propios y extraños\\ndiariamente para dialogar, tomar un café o\\npasar un rato, es un punto de encuentro importante",
+        "infoGeneral" : "El parque Jesús Maestro fue reconstruido entre 1988 y el año 2000, donde se acondiciono como se encuentra en la actualidad, con variedad de plantas y árboles conservando el verde de la naturaleza, cuenta con una estatua en el centro y sillas de cemento donde se reúnen propios y extraños diariamente para dialogar, tomar un café o pasar un rato, es un punto de encuentro importante",
         "ubicacion" : "Carrera 3ª, Fómeque, Cundinamarca, Colombia",
         "temperatura" : 18,
-        "sitiosRecomendados" : "Parque San Isidro,Iglesia Inmaculada Concepcion,hoteles,Colegio Monseñor Agustin Gutierrez,Alto de las tres cruces Ect.",
+        "sitiosRecomendados" : "Parque San Isidro,Iglesia Inmaculada Concepcion,hoteles,Colegio Monseñor Agustin Gutierrez,Alto de las tres cruces Etc.",
         "puntuacion" : 400,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/ParqueJesusMaestro.jpg"
     },
