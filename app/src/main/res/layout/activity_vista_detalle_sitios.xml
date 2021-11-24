@@ -19,7 +19,7 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal"
             android:text="@string/sitio1"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -96,18 +96,18 @@
                 android:gravity="start"
                 android:text="@string/ubicacion1"
                 android:textSize="16sp" />
+
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="3"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            android:text="@string/description1" />
+            android:text="@string/descripcionsitio"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView8"
@@ -116,18 +116,17 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal"
             android:text="@string/sitiorec1"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine2"
+        <TextView
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="3"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="@string/sitiorec1" />
+            android:text="@string/sitiorec1"
+            android:textSize="18sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

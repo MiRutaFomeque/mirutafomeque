@@ -1,5 +1,6 @@
 package com.myroutefomeque.mrfom.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.myroutefomeque.mrfom.R
+import com.myroutefomeque.mrfom.detalle.VistaDetalleSitios
 import com.myroutefomeque.mrfom.model.SitiosTuristicos
 import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
 import kotlin.math.log
@@ -43,6 +45,9 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
 
     private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
         Log.d("ubicacion", sitiosturisticos.ubicacion)
+        val intent = Intent(this, VistaDetalleSitios::class.java)
+        intent.putExtra("sitiosturisticos", sitiosturisticos)
+        startActivity(intent)
     }
 
     private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
