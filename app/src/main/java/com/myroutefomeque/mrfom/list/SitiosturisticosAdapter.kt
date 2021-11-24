@@ -11,7 +11,9 @@ import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
 import com.squareup.picasso.Picasso
 
 class SitiosturisticosAdapter(
-    private val SitiosturisticosList: ArrayList<SitiosTuristicosItem>
+    private val SitiosturisticosList: ArrayList<SitiosTuristicosItem>,
+    private val onItemClicked: (SitiosTuristicosItem) -> Unit
+
     ) : RecyclerView.Adapter<SitiosturisticosAdapter.ViewHolder>() {
 
 
@@ -22,6 +24,7 @@ class SitiosturisticosAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val SitiosTuristicos = SitiosturisticosList[position]
+        holder.itemView.setOnClickListener { onItemClicked(SitiosturisticosList[position]) }
         holder.bind(SitiosTuristicos)
     }
 

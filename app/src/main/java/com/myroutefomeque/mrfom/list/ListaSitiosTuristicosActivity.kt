@@ -2,12 +2,14 @@ package com.myroutefomeque.mrfom.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.myroutefomeque.mrfom.R
 import com.myroutefomeque.mrfom.model.SitiosTuristicos
 import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
+import kotlin.math.log
 
 class ListaSitiosTuristicosActivity : AppCompatActivity() {
 
@@ -22,7 +24,7 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
         sitiosrecyclerview = findViewById(R.id.lista_sitios_recycler_view)
         //listSitios = crearMockListaSitios()
         listSitios = loadMockListaSitiosFromJson()
-        sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios)
+        sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios, onItemClicked = { onSitiosTuristicosClicked(it) })
 
         /*sitiosrecyclerview.addItemDecoration(
             DividerItemDecoration(
@@ -37,6 +39,10 @@ class ListaSitiosTuristicosActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
+        Log.d("ubicacion", sitiosturisticos.ubicacion)
     }
 
     private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
