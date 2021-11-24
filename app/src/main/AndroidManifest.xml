@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myroutefomeque.mrfom">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MRFOM">
         <activity
-            android:name=".ListaSitiosTuristicosActivity"
+            android:name=".detalle.VistaDetalleSitios"
+            android:exported="false" />
+        <activity
+            android:name=".list.ListaSitiosTuristicosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +24,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistroLugares"
-            android:exported="true">
-
-        </activity>
-
+            android:name=".registro.RegistroLugares"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

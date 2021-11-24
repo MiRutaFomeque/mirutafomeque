@@ -1,4 +1,4 @@
-package com.myroutefomeque.mrfom
+package com.myroutefomeque.mrfom.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.myroutefomeque.mrfom.R
+import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
 import com.squareup.picasso.Picasso
 
 class SitiosturisticosAdapter(

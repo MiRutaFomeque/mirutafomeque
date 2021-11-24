@@ -1,7 +1,5 @@
-package com.myroutefomeque.mrfom
+package com.myroutefomeque.mrfom.model
 
-
-import com.google.gson.annotations.SerializedName
 
 /*
  //Codigo anterior para cargar una lista quemada

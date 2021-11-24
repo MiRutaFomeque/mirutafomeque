@@ -3,7 +3,7 @@
     <string name="titulo">Lugares de Fómeque</string>
     <string name="tituloregistrodatos">Registro de lugares</string>
     <string name="nombresitio">Nombre del sitio</string>
-    <string name="ubicacionsitio">Ubicación del sitio</string>
+    <string name="ubicacionsitio">Ubicación:</string>
     <string name="temperaturasitio">Temperatura</string>
     <string name="descripcionsitio">Descripción</string>
     <string name="puntuacionsitio">Puntuación</string>
@@ -19,4 +19,7 @@
     <string name="puntaje1">100</string>
     <string name="textovisor">TextView</string>
     <string name="medida">°C</string>
+    <string name="imgreferencia">Imagen de referencia</string>
+    <string name="sitiorec1">Sitios recomendados</string>
+    <string name="puntos">P</string>
 </resources>

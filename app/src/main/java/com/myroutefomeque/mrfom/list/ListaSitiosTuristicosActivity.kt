@@ -1,11 +1,13 @@
-package com.myroutefomeque.mrfom
+package com.myroutefomeque.mrfom.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.myroutefomeque.mrfom.R
+import com.myroutefomeque.mrfom.model.SitiosTuristicos
+import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
 
 class ListaSitiosTuristicosActivity : AppCompatActivity() {
 
