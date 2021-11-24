@@ -24,7 +24,8 @@
             android:background="#8BC34A"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp">
 

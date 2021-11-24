@@ -2,9 +2,9 @@ package com.myroutefomeque.mrfom.detalle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.myroutefomeque.mrfom.R
 import com.myroutefomeque.mrfom.databinding.ActivityVistaDetalleSitiosBinding
 import com.myroutefomeque.mrfom.model.SitiosTuristicosItem
+import com.squareup.picasso.Picasso
 
 class VistaDetalleSitios : AppCompatActivity() {
 
@@ -25,6 +25,7 @@ class VistaDetalleSitios : AppCompatActivity() {
             locationTextView.text = sitiosturisticos.ubicacion
             descriptionTextView.text = sitiosturisticos.infoGeneral
             sitioRecTextView.text = sitiosturisticos.sitiosRecomendados
+            Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
         }
     }
 }
