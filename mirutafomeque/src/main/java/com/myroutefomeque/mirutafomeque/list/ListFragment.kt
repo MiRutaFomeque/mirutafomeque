@@ -44,6 +44,7 @@ class ListFragment : Fragment() {
 
     private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitio = sitiosturisticos))
+        //linea que prueba el preferencefragment //findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment())
     }
 
     private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
