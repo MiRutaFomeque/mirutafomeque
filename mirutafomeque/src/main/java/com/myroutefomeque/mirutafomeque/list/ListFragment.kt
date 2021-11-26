@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.myroutefomeque.mirutafomeque.databinding.FragmentListBinding
 import com.myroutefomeque.mirutafomeque.model.SitiosTuristicos
@@ -30,14 +32,22 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         listSitios = loadMockListaSitiosFromJson()
         sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios, onItemClicked = { onSitiosTuristicosClicked(it) })
+        listBinding.listaSitiosRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = sitiosTuristicosAdapter
+            setHasFixedSize(false)
+        }
+
+
+
     }
 
     private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
-    // TODO programar detalle
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitio = sitiosturisticos))
     }
 
     private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
-        var listaSitiosTurString : String = context?.assets?.open("sitiosTuristicos.json")?.bufferedReader().use { it!!.readText() } //TODO reparar!!
+        val listaSitiosTurString : String = context?.assets?.open("sitiosTuristicos.json")?.bufferedReader().use { it!!.readText() } //TODO reparar!!
         //El contexto cambia dentro del fragment, no se va a llamar applicationContext.assets, sino context?.assets?
          /* var listaSitiosTurString : String = applicationContext.assets.open("sitiosTuristicos.json").bufferedReader().use { it.readText() }*/
         val gson = Gson()
