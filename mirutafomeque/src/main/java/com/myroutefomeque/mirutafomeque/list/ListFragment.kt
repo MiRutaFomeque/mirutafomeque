@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.myroutefomeque.mirutafomeque.databinding.FragmentListBinding
+import com.myroutefomeque.mirutafomeque.main.MainActivity
 import com.myroutefomeque.mirutafomeque.model.SitiosTuristicos
 import com.myroutefomeque.mirutafomeque.model.SitiosTuristicosItem
 
@@ -19,6 +20,8 @@ class ListFragment : Fragment() {
     private lateinit var listBinding: FragmentListBinding
     private lateinit var sitiosTuristicosAdapter: SitiosturisticosAdapter
     private lateinit var listSitios: ArrayList<SitiosTuristicosItem>
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,6 +33,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity?)?.hideIcon()
         listSitios = loadMockListaSitiosFromJson()
         sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios, onItemClicked = { onSitiosTuristicosClicked(it) })
         listBinding.listaSitiosRecyclerView.apply {

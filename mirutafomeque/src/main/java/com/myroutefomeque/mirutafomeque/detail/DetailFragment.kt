@@ -7,12 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.myroutefomeque.mirutafomeque.databinding.FragmentDetailBinding
+import com.myroutefomeque.mirutafomeque.main.MainActivity
 import com.squareup.picasso.Picasso
 
 
 class DetailFragment : Fragment() {
     private val args:DetailFragmentArgs by navArgs()
     private lateinit var detailBinding: FragmentDetailBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        (activity as MainActivity?)?.showIcon()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
