@@ -12,25 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MRFOM">
         <activity
-            android:name=".drawer.DrawerActivity"
+            android:name=".TabbedActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_tabbed"
             android:theme="@style/Theme.MRFOM.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".drawer.DrawerActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MRFOM.NoActionBar"/>
+
+        <activity
             android:name=".bottom.BottomActivity"
             android:exported="true"
             android:label="@string/app_name" />
-
-
         <activity
             android:name=".main.MainActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
 
 </manifest>
