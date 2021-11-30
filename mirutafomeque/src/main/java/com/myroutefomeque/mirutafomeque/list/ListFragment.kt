@@ -33,7 +33,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity?)?.hideIcon()
+        //(activity as MainActivity?)?.hideIcon() No se usa en drawer activity
         listSitios = loadMockListaSitiosFromJson()
         sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios, onItemClicked = { onSitiosTuristicosClicked(it) })
         listBinding.listaSitiosRecyclerView.apply {
