@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+ <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,9 +25,17 @@
         <argument
             android:name="sitio"
             app:argType="com.myroutefomeque.mirutafomeque.model.SitiosTuristicosItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_preferences"
         android:name="com.myroutefomeque.mirutafomeque.preference.SettingsFragment"
         android:label="Configuración" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.myroutefomeque.mirutafomeque.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
