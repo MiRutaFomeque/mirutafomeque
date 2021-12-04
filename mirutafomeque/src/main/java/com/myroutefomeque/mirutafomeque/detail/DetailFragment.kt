@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import com.myroutefomeque.mirutafomeque.databinding.FragmentDetailBinding
 import com.myroutefomeque.mirutafomeque.main.MainActivity
@@ -12,12 +14,15 @@ import com.squareup.picasso.Picasso
 
 
 class DetailFragment : Fragment() {
-    private val args:DetailFragmentArgs by navArgs()
+
     private lateinit var detailBinding: FragmentDetailBinding
+    private val detailViewModel: DetailViewModel by viewModels()
+    private val args:DetailFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //(activity as MainActivity?)?.showIcon() No se usa en drawer activity
+        (activity as MainActivity?)?.showIcon()
     }
 
     override fun onCreateView(
@@ -26,6 +31,7 @@ class DetailFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         detailBinding = FragmentDetailBinding.inflate(inflater, container, false)
+        //Se puede borrar esta linea en la forma en que se definio en la parte de arriba de este codigo detailViewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
         return detailBinding.root
     }
 
@@ -40,7 +46,8 @@ class DetailFragment : Fragment() {
             locationTextView.text = sitiosturisticos.ubicacion
             descriptionTextView.text = sitiosturisticos.infoGeneral
             sitioRecTextView.text = sitiosturisticos.sitiosRecomendados
-            com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
+            //com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
+            Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
         }
     }
 
