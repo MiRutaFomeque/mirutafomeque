@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.myroutefomeque.mirutafomeque.databinding.FragmentDetailBinding
 import com.myroutefomeque.mirutafomeque.main.MainActivity
@@ -46,8 +47,11 @@ class DetailFragment : Fragment() {
             locationTextView.text = sitiosturisticos.ubicacion
             descriptionTextView.text = sitiosturisticos.infoGeneral
             sitioRecTextView.text = sitiosturisticos.sitiosRecomendados
-            //com.squareup.picasso.Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
             Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
+            //Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
+            mapButton.setOnClickListener{
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+            }
         }
     }
 
