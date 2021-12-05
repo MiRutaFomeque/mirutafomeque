@@ -29,12 +29,9 @@ class MapsFragment : Fragment() {
          * user has installed Google Play services and returned to the app.
          */
         val sitiosturisticos = args.sitio
-
-
-
         val lugarmap = LatLng(sitiosturisticos.latitud,sitiosturisticos.longitud)
         googleMap.addMarker(MarkerOptions().position(lugarmap).title(sitiosturisticos.nombre).snippet(sitiosturisticos.ubicacion))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lugarmap, 17F))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lugarmap, sitiosturisticos.zoommap))
     }
 
     override fun onCreateView(

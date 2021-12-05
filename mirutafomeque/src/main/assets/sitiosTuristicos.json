@@ -8,7 +8,8 @@
         "puntuacion" : 100,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCumbre.jpg",
         "latitud" :  4.5323925,
-        "longitud" : -73.8347573
+        "longitud" : -73.8347573,
+        "zoommap" : "12F"
     },
     {   
         "nombre" : "La Unión",
@@ -19,7 +20,8 @@
         "puntuacion" : 200,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaUnion.jpg",
         "latitud" :  4.5024331,
-        "longitud" : -73.9020696
+        "longitud" : -73.9020696,
+        "zoommap" : "17F"
     },
     {      
         "nombre" : "Chingaza",
@@ -30,7 +32,8 @@
         "puntuacion" : 300,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/Chingaza.jpg",
         "latitud" :  4.5295207,
-        "longitud" : -73.7578425
+        "longitud" : -73.7578425,
+        "zoommap" : "12F"
     },
     {       
         "nombre" : "Parque Jesús Maestro",
@@ -41,7 +44,8 @@
         "puntuacion" : 400,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/ParqueJesusMaestro.jpg",
         "latitud" :  4.4860666,
-        "longitud" : -73.8950191
+        "longitud" : -73.8950191,
+        "zoommap" : "17F"
     },
     {       
         "nombre" : "La casa de Fo ezama",
@@ -52,6 +56,7 @@
         "puntuacion" : 500,
         "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCasaDeFoEzama.jpg",
         "latitud" :  4.4985125,
-        "longitud" : -73.868586
+        "longitud" : -73.868586,
+        "zoommap" : "12F"
     }
 ]

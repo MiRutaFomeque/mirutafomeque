@@ -22,5 +22,7 @@ data class SitiosTuristicosItem(
     @SerializedName("latitud")
     val latitud: Double,
     @SerializedName("longitud")
-    val longitud: Double
+    val longitud: Double,
+    @SerializedName("zoommap")
+    val zoommap: Float
 ): Serializable
