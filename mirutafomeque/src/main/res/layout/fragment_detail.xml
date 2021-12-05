@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="right|center_vertical"
                 android:text="@string/temperatura1"
                 android:textSize="16sp" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="left|center_vertical"
                 android:text="@string/medida"
                 android:textSize="16sp" />
 
@@ -60,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="right|center_vertical"
                 android:text="@string/puntaje1"
                 android:textSize="16sp" />
 
@@ -69,17 +69,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="left|center_vertical"
                 android:text="@string/puntos"
                 android:textSize="16sp" />
-
-            <ImageButton
-                android:id="@+id/mapButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/ic_map"
-                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -118,6 +110,38 @@
             android:layout_marginBottom="10dp"
             android:text="@string/descripcionsitio"
             android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-24dp" />
+
+            <ImageButton
+                android:id="@+id/mapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toTopOf="@+id/map"
+                app:layout_constraintEnd_toStartOf="@+id/map"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/textView8"

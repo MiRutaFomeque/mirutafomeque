@@ -9,6 +9,12 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
+import com.myroutefomeque.mirutafomeque.R
 import com.myroutefomeque.mirutafomeque.databinding.FragmentDetailBinding
 import com.myroutefomeque.mirutafomeque.main.MainActivity
 import com.squareup.picasso.Picasso
@@ -19,6 +25,27 @@ class DetailFragment : Fragment() {
     private lateinit var detailBinding: FragmentDetailBinding
     private val detailViewModel: DetailViewModel by viewModels()
     private val args:DetailFragmentArgs by navArgs()
+
+    private val callback = OnMapReadyCallback { googleMap ->
+
+        /**
+         * Manipulates the map once available.
+         * This callback is triggered when the map is ready to be used.
+         * This is where we can add markers or lines, add listeners or move the camera.
+         * In this case, we just add a marker near Sydney, Australia.
+         * If Google Play services is not installed on the device, the user will be prompted to
+         * install it inside the SupportMapFragment. This method will only be triggered once the
+         * user has installed Google Play services and returned to the app.
+         */
+        val sitiosturisticos = args.sitio
+        val lugarmap = LatLng(sitiosturisticos.latitud,sitiosturisticos.longitud)
+        googleMap.addMarker(MarkerOptions().position(lugarmap).title(sitiosturisticos.nombre).snippet(sitiosturisticos.ubicacion))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lugarmap, sitiosturisticos.zoommap))
+    }
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +67,9 @@ class DetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val sitiosturisticos = args.sitio
 
+        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
+        mapFragment?.getMapAsync(callback)
+
         with(detailBinding){
             nameTextView.text = sitiosturisticos.nombre
             temperatureTextView.text = sitiosturisticos.temperatura.toString()
@@ -49,10 +79,12 @@ class DetailFragment : Fragment() {
             sitioRecTextView.text = sitiosturisticos.sitiosRecomendados
             Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
             //Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
+
             mapButton.setOnClickListener{
                 findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment(sitiosturisticos))
             }
         }
+
     }
 
 }
