@@ -37,5 +37,9 @@
         android:id="@+id/mapsFragment"
         android:name="com.myroutefomeque.mirutafomeque.maps.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="sitio"
+            app:argType="com.myroutefomeque.mirutafomeque.model.SitiosTuristicosItem" />
+    </fragment>
 </navigation>

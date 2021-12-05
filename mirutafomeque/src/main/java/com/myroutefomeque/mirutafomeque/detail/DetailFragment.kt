@@ -50,7 +50,7 @@ class DetailFragment : Fragment() {
             Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
             //Picasso.get().load(sitiosturisticos.urlPicture).into(pictureImageView)
             mapButton.setOnClickListener{
-                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment(sitiosturisticos))
             }
         }
     }
