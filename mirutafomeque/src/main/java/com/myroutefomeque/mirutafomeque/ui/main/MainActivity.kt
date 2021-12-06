@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.main
+package com.myroutefomeque.mirutafomeque.ui.main
 
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,7 @@ import android.view.MenuItem
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.myroutefomeque.mirutafomeque.R
-import com.myroutefomeque.mirutafomeque.preference.SettingsFragment
+import com.myroutefomeque.mirutafomeque.ui.preference.SettingsFragment
 
 
 

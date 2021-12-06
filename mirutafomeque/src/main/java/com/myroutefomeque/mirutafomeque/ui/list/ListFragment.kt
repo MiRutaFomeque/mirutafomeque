@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.list
+package com.myroutefomeque.mirutafomeque.ui.list
 
 
 import android.os.Bundle
@@ -7,11 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewTreeLifecycleOwner
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.myroutefomeque.mirutafomeque.databinding.FragmentListBinding
-import com.myroutefomeque.mirutafomeque.main.MainActivity
+import com.myroutefomeque.mirutafomeque.ui.main.MainActivity
 import com.myroutefomeque.mirutafomeque.model.SitiosTuristicosItem
 
 
@@ -36,7 +35,8 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon() //No se usa en drawer activity
-        listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json"))
+        //listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json")) //Llama al mockpup para carcar los datos del archivo json
+        listViewModel.getSitiosturisticosFromServer()
 
         listViewModel.onSitiosTuristicosLoaded.observe(viewLifecycleOwner,{ result ->
             onSitiosTuristicosLoadedSubscribe(result)

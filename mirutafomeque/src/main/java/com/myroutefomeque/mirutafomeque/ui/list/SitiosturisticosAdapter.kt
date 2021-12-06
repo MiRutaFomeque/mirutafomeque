@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.list
+package com.myroutefomeque.mirutafomeque.ui.list
 
 import android.view.LayoutInflater
 import android.view.View

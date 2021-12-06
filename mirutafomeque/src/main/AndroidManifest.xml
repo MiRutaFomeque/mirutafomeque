@@ -32,21 +32,21 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".tabbed.TabbedActivity"
+            android:name="com.myroutefomeque.mirutafomeque.ui.tabbed.TabbedActivity"
             android:exported="true"
             android:label="@string/title_activity_tabbed"
             android:theme="@style/Theme.MRFOM.NoActionBar" />
         <activity
-            android:name=".drawer.DrawerActivity"
+            android:name="com.myroutefomeque.mirutafomeque.ui.drawer.DrawerActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MRFOM.NoActionBar" />
         <activity
-            android:name=".bottom.BottomActivity"
+            android:name="com.myroutefomeque.mirutafomeque.ui.bottom.BottomActivity"
             android:exported="true"
             android:label="@string/app_name" />
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.myroutefomeque.mirutafomeque.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

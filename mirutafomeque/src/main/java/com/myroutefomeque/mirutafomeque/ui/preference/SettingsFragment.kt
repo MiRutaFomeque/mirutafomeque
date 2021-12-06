@@ -1,11 +1,11 @@
-package com.myroutefomeque.mirutafomeque.preference
+package com.myroutefomeque.mirutafomeque.ui.preference
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.myroutefomeque.mirutafomeque.R
-import com.myroutefomeque.mirutafomeque.main.MainActivity
+import com.myroutefomeque.mirutafomeque.ui.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.maps
+package com.myroutefomeque.mirutafomeque.ui.maps
 
 import androidx.fragment.app.Fragment
 
@@ -14,7 +14,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.myroutefomeque.mirutafomeque.R
-import com.myroutefomeque.mirutafomeque.detail.DetailFragmentArgs
+import com.myroutefomeque.mirutafomeque.ui.detail.DetailFragmentArgs
 
 class MapsFragment : Fragment() {
     private val args: DetailFragmentArgs by navArgs()

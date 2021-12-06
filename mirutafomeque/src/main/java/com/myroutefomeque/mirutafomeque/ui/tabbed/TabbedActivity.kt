@@ -1,8 +1,7 @@
-package com.myroutefomeque.mirutafomeque.tabbed
+package com.myroutefomeque.mirutafomeque.ui.tabbed
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.myroutefomeque.mirutafomeque.tabbed.SectionsPagerAdapter
 import com.myroutefomeque.mirutafomeque.databinding.ActivityTabbedBinding
 
 class TabbedActivity : AppCompatActivity() {
