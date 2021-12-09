@@ -6,18 +6,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.gson.Gson
 import com.myroutefomeque.mirutafomeque.databinding.FragmentListBinding
-import com.myroutefomeque.mirutafomeque.main.MainActivity
-import com.myroutefomeque.mirutafomeque.model.SitiosTuristicos
 import com.myroutefomeque.mirutafomeque.model.SitiosTuristicosItem
 
 
 class ListFragment : Fragment() {
 
     private lateinit var listBinding: FragmentListBinding
+    private val listViewModel: ListViewModel by viewModels()
     private lateinit var sitiosTuristicosAdapter: SitiosturisticosAdapter
     private lateinit var listSitios: ArrayList<SitiosTuristicosItem>
 
@@ -28,14 +27,21 @@ class ListFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         listBinding = FragmentListBinding.inflate(inflater, container, false)
+        //listViewModel = ViewModelProvider(this)[ListViewModel::class.java]
         return listBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //(activity as MainActivity?)?.hideIcon() No se usa en drawer activity
-        listSitios = loadMockListaSitiosFromJson()
+        listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json"))
+
+        listViewModel.onSitiosLoaded.observe(viewLifecycleOwner, { result ->
+            onSitiosLoadedSubscribe(result)
+        })
+
         sitiosTuristicosAdapter = SitiosturisticosAdapter(listSitios, onItemClicked = { onSitiosTuristicosClicked(it) })
+
         listBinding.listaSitiosRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = sitiosTuristicosAdapter
@@ -46,17 +52,12 @@ class ListFragment : Fragment() {
 
     }
 
+    private fun onSitiosLoadedSubscribe(listSitio: ArrayList<SitiosTuristicosItem>?) {
+         }
+
     private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitio = sitiosturisticos))
         //linea que prueba el preferencefragment //findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment())
     }
 
-    private fun loadMockListaSitiosFromJson(): ArrayList<SitiosTuristicosItem> {
-        val listaSitiosTurString : String = context?.assets?.open("sitiosTuristicos.json")?.bufferedReader().use { it!!.readText() } //TODO reparar!!
-        //El contexto cambia dentro del fragment, no se va a llamar applicationContext.assets, sino context?.assets?
-         /* var listaSitiosTurString : String = applicationContext.assets.open("sitiosTuristicos.json").bufferedReader().use { it.readText() }*/
-        val gson = Gson()
-        val data = gson.fromJson(listaSitiosTurString, SitiosTuristicos::class.java)
-        return data
-    }
 }

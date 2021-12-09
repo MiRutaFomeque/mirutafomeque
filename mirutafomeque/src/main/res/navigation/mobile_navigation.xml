@@ -29,5 +29,14 @@
     <fragment
         android:id="@+id/navigation_preferences"
         android:name="com.myroutefomeque.mirutafomeque.preference.SettingsFragment"
-        android:label="Configuración" />
+        android:label="Configuración" >
+        <action
+            android:id="@+id/action_navigation_preferences_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.myroutefomeque.mirutafomeque.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
