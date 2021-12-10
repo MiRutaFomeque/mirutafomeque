@@ -52,4 +52,12 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="openmapnewwindow">Click para ampliar</string>
+    <string name="logearse">Ingresar</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="repeatpassword">Repita la contraseña</string>
+    <string name="registro">Registrar</string>
+    <string name="logo">Logo</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="registertext"><u>¿No tienes cuenta?, regístrate</u></string>
 </resources>

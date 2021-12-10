@@ -7,6 +7,7 @@ import kotlin.concurrent.timerTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.navigation.findNavController
 import com.myroutefomeque.mirutafomeque.R
 import com.myroutefomeque.mirutafomeque.ui.main.MainActivity
 
