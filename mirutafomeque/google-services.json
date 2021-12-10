@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "290244957497",
+    "project_id": "active-freehold-334119",
+    "storage_bucket": "active-freehold-334119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290244957497:android:c47399eddd7ba9ca8d44e8",
+        "android_client_info": {
+          "package_name": "com.myroutefomeque.mirutafomeque"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290244957497-n7nigldcfeee4siji3adce1ug6jscqka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myroutefomeque.mirutafomeque",
+            "certificate_hash": "c875f1de8e1868a530fcabeede5bde8252904cab"
+          }
+        },
+        {
+          "client_id": "290244957497-mjh3m7nn6bfganco6m902sld6i5trfm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDldDI5CrFlGpTZt6AxTZ3fqriuqeL4X4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290244957497-mjh3m7nn6bfganco6m902sld6i5trfm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
