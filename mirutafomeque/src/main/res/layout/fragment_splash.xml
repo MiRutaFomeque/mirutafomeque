@@ -14,10 +14,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
+            android:contentDescription="@string/logo"
             app:srcCompat="@drawable/logo_mrfom" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
