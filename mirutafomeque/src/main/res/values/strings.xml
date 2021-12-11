@@ -60,4 +60,5 @@
     <string name="logo">Logo</string>
     <string name="username">Nombre de usuario</string>
     <string name="registertext"><u>¿No tienes cuenta?, regístrate</u></string>
+    <string name="sign_out">Cerrar Sesiòn</string>
 </resources>

@@ -8,6 +8,11 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.findNavController
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthActionCodeException
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.myroutefomeque.mirutafomeque.R
 import com.myroutefomeque.mirutafomeque.ui.preference.SettingsFragment
 
@@ -44,6 +49,12 @@ class MainActivity : AppCompatActivity() {
             }
             android.R.id.home -> {
                 onBackPressed()
+                true
+            }
+            R.id.menu_sign_out -> {
+                val auth: FirebaseAuth = Firebase.auth
+                auth.signOut()
+                //findNavController().navigate(R.id.loginFragment)
                 true
             }
             else -> {return true}
