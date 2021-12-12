@@ -6,7 +6,10 @@
         "temperatura" : 18,
         "sitiosRecomendados" : "El mismo lugar.",
         "puntuacion" : 100,
-        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCumbre.jpg"
+        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCumbre.jpg",
+        "latitud" :  4.5315061,
+        "longitud" : -73.8418891,
+        "zoom" : 15.25
     },
     {   
         "nombre" : "La Unión",
@@ -15,7 +18,10 @@
         "temperatura" : 22,
         "sitiosRecomendados" : "La capilla,las playas,balneario,Restaurante Casa Betelu.",
         "puntuacion" : 200,
-        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaUnion.jpg"
+        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaUnion.jpg",
+        "latitud" :  4.5024085,
+        "longitud" : -73.9038077,
+        "zoom" : 17.0
     },
     {      
         "nombre" : "Chingaza",
@@ -24,7 +30,10 @@
         "temperatura" : 21,
         "sitiosRecomendados" : "Laguna de Siecha,sendero Lagunas de Buitrago, sendero Cuchillas de Siecha, sendero Laguna Seca, sendero Suasie Corto y Suasie Largo y el sendero las Plantas del Camino.",
         "puntuacion" : 300,
-        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/Chingaza.jpg"
+        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/Chingaza.jpg",
+        "latitud" :  4.5731293,
+        "longitud" : -73.7584978,
+        "zoom" : 15.0
     },
     {       
         "nombre" : "Parque Jesús Maestro",
@@ -33,7 +42,10 @@
         "temperatura" : 18,
         "sitiosRecomendados" : "Parque San Isidro,Iglesia Inmaculada Concepcion,hoteles,Colegio Monseñor Agustin Gutierrez,Alto de las tres cruces Etc.",
         "puntuacion" : 400,
-        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/ParqueJesusMaestro.jpg"
+        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/ParqueJesusMaestro.jpg",
+        "latitud" :  4.4864109,
+        "longitud" : -73.8959954,
+        "zoom" : 18.46
     },
     {       
         "nombre" : "La casa de Fo ezama",
@@ -42,6 +54,9 @@
         "temperatura" : 12,
         "sitiosRecomendados" : "Rio negro.",
         "puntuacion" : 500,
-        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCasaDeFoEzama.jpg"
+        "urlPicture" : "https://jhostore.store/wp-content/uploads/2021/11/LaCasaDeFoEzama.jpg",
+        "latitud" :  4.4985392,
+        "longitud" : -73.8699787,
+        "zoom" : 17.68
     }
 ]

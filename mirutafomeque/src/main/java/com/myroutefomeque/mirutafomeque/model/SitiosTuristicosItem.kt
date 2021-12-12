@@ -18,5 +18,11 @@ data class SitiosTuristicosItem(
     @SerializedName("ubicacion")
     val ubicacion: String,
     @SerializedName("urlPicture")
-    val urlPicture: String
+    val urlPicture: String,
+    @SerializedName("latitud")
+    val latitud: Double,
+    @SerializedName("longitud")
+    val longitud: Double,
+    @SerializedName("zoom")
+    val zoom: Float
 ): Serializable

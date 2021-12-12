@@ -18,7 +18,7 @@ class ListFragment : Fragment() {
     private lateinit var listBinding: FragmentListBinding
     private val listViewModel: ListViewModel by viewModels()
     private lateinit var sitiosTuristicosAdapter: SitiosturisticosAdapter
-    private lateinit var listSitios: ArrayList<SitiosTuristicosItem>
+    private var listSitios: ArrayList<SitiosTuristicosItem> = arrayListOf()
 
 
     override fun onCreateView(
@@ -47,13 +47,16 @@ class ListFragment : Fragment() {
             adapter = sitiosTuristicosAdapter
             setHasFixedSize(false)
         }
-
-
-
     }
 
-    private fun onSitiosLoadedSubscribe(listSitio: ArrayList<SitiosTuristicosItem>?) {
-         }
+    private fun onSitiosLoadedSubscribe(result: ArrayList<SitiosTuristicosItem>?) {
+        result?.let { listSitios ->
+            sitiosTuristicosAdapter.appendItems(listSitios)
+            /*
+            this.listSitios = listSitios
+            sitiosTuristicosAdapter.notifyDataSetChanged()*/
+        }
+    }
 
     private fun onSitiosTuristicosClicked(sitiosturisticos: SitiosTuristicosItem) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sitio = sitiosturisticos))
