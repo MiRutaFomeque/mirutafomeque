@@ -20,5 +20,6 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDldDI5CrFlGpTZt6AxTZ3fqriuqeL4X4Q</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=EE:D3:DC:C7:AF:52:5A:74:66:69:48:2B:E1:EA:9D:07:05:E1:D1:21%3Bcom.myroutefomeque.mirutafomeque
+</string>
 </resources>

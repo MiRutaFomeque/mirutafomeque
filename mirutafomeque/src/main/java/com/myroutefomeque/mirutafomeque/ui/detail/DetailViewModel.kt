@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.detail
+package com.myroutefomeque.mirutafomeque.ui.detail
 
 import androidx.lifecycle.ViewModel
 

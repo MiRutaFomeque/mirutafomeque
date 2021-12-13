@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.bottom
+package com.myroutefomeque.mirutafomeque.ui.bottom
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

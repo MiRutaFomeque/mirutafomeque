@@ -1,11 +1,11 @@
-package com.myroutefomeque.mirutafomeque.tabbed
+package com.myroutefomeque.mirutafomeque.ui.tabbed
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.myroutefomeque.mirutafomeque.R
-import com.myroutefomeque.mirutafomeque.preference.SettingsFragment
+import com.myroutefomeque.mirutafomeque.ui.preference.SettingsFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.title_list,

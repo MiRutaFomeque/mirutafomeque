@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.list
+package com.myroutefomeque.mirutafomeque.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +29,12 @@ class SitiosturisticosAdapter(
     }
 
     override fun getItemCount(): Int = SitiosturisticosList.size
+
+    fun appendItems(newItems: ArrayList<SitiosTuristicosItem>) {
+        SitiosturisticosList.clear()
+        SitiosturisticosList.addAll(newItems)
+        notifyDataSetChanged()
+    }
 
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){

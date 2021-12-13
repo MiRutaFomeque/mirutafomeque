@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -16,7 +17,13 @@ import com.myroutefomeque.mirutafomeque.R
 
 class MapsFragment : Fragment() {
 
+    private val args:MapsFragmentArgs by navArgs()
+
     private val callback = OnMapReadyCallback { googleMap ->
+
+        val latitud = args.ubicacion.latitud
+        val longitud = args.ubicacion.longitud
+        val zoom = args.ubicacion.zoommap
         /**
          * Manipulates the map once available.
          * This callback is triggered when the map is ready to be used.
@@ -26,9 +33,9 @@ class MapsFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val punto = LatLng(latitud, longitud)
+        googleMap.addMarker(MarkerOptions().position(punto).title("Punto de interes"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(punto, zoom))
     }
 
     override fun onCreateView(
