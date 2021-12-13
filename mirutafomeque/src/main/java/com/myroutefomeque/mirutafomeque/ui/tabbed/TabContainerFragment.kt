@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.tabbed
+package com.myroutefomeque.mirutafomeque.ui.tabbed
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

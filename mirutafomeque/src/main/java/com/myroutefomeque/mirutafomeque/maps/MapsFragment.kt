@@ -23,7 +23,7 @@ class MapsFragment : Fragment() {
 
         val latitud = args.ubicacion.latitud
         val longitud = args.ubicacion.longitud
-        val zoom = args.ubicacion.zoom
+        val zoom = args.ubicacion.zoommap
         /**
          * Manipulates the map once available.
          * This callback is triggered when the map is ready to be used.

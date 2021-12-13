@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="com.myroutefomeque.mirutafomeque.list.ListFragment"
+        android:name="com.myroutefomeque.mirutafomeque.ui.list.ListFragment"
         android:label="Sitios Turísticos"
         tools:layout="@layout/fragment_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.myroutefomeque.mirutafomeque.detail.DetailFragment"
+        android:name="com.myroutefomeque.mirutafomeque.ui.detail.DetailFragment"
         android:label="Detalle Sitio"
         tools:layout="@layout/fragment_detail" >
         <argument
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_preferences"
-        android:name="com.myroutefomeque.mirutafomeque.preference.SettingsFragment"
+        android:name="com.myroutefomeque.mirutafomeque.ui.preference.SettingsFragment"
         android:label="Configuración" />
     <fragment
         android:id="@+id/mapsFragment"

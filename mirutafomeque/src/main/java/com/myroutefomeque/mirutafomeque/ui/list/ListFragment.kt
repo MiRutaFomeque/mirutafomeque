@@ -1,4 +1,4 @@
-package com.myroutefomeque.mirutafomeque.list
+package com.myroutefomeque.mirutafomeque.ui.list
 
 
 import android.os.Bundle
@@ -34,7 +34,10 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //(activity as MainActivity?)?.hideIcon() No se usa en drawer activity
-        listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json"))
+
+        //listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json"))
+
+        listViewModel.getSitiosturisticosFromServer()
 
         listViewModel.onSitiosLoaded.observe(viewLifecycleOwner, { result ->
             onSitiosLoadedSubscribe(result)
