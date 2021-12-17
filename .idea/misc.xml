@@ -3,11 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/drawable/logo.xml" value="0.290625" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/drawable/splashscreen.xml" value="0.33" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/activity_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/app_bar_drawer.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/base_loader_layout.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/content_drawer.xml" value="0.1" />
         <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/fragment_detail.xml" value="0.33" />
-        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/fragment_maps.xml" value="0.25104166666666666" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/fragment_list.xml" value="0.25" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/fragment_maps.xml" value="0.1" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/fragment_splash.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/login_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/layout/register_fragment.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/menu/activity_main_drawer.xml" value="0.20205128205128206" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/menu/overflow_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.290625" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.290625" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/mipmap-anydpi-v26/logomr.xml" value="0.28854166666666664" />
+        <entry key="..\:/Users/Jhoan/Desktop/Mintic/Cursos/RepoMRFOM/mirutafomeque/mirutafomeque/src/main/res/mipmap-anydpi-v26/logomr_round.xml" value="0.28854166666666664" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
 </project>

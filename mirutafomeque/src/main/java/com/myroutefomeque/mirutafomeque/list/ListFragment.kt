@@ -35,7 +35,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity?)?.hideIcon() //No se usa en drawer activity
+        //(activity as MainActivity?)?.hideIcon() //No se usa en drawer activity
         listViewModel.loadMockListaSitiosFromJson(context?.assets?.open("sitiosTuristicos.json"))
 
         listViewModel.onSitiosTuristicosLoaded.observe(viewLifecycleOwner,{ result ->
